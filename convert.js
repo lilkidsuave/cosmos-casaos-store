@@ -44,8 +44,6 @@ async function scanFiles(folder) {
 function composeConvert(input) {
   // change $AppID to {ServiceName}
   let output = input.replace(/\$AppID/g, '{ServiceName}');
-  output = output.replace(/\$PGID/g, '1000');
-  output = output.replace(/\$PUID/g, '1000');
   output = output.replace(/\$TZ/g, 'auto');
 
   // change source: /DATA/AppData/ to source: {DefaultDataPath}/
