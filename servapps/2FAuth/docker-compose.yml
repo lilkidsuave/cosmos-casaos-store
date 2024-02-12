@@ -1,5 +1,3 @@
-cosmos-installer: null
-name: 2fauth
 services:
   "{ServiceName}":
     image: 2fauth/2fauth:4.2.4
