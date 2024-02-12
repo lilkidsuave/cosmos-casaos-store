@@ -9,8 +9,8 @@ services:
           memory: 64M
     restart: always
     volumes:
-      - type: bind
-        source: "{DefaultDataPath}/AppData/{ServiceName}"
+      - type: volume
+        source: "{ServiceName}-data"
         target: /2fauth
     container_name: "{ServiceName}"
     hostname: "{ServiceName}"
