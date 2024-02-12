@@ -1,4 +1,4 @@
-cosmos-installer: null
+cosmos-installer: {}
 name: 2fauth
 services:
   "{ServiceName}":
@@ -25,3 +25,4 @@ services:
         target: /2fauth
     container_name: "{ServiceName}"
     hostname: "{ServiceName}"
+minVersion: 0.14.0-0
