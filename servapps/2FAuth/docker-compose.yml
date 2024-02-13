@@ -1,4 +1,5 @@
 cosmos-installer: {}
+minVersion: 0.14.0-0
 name: 2fauth
 services:
   "{ServiceName}":
@@ -25,4 +26,8 @@ services:
         BlockCommonBots: true
         SmartShield:
           Enabled: true
-minVersion: 0.14.0-0
+        labels:
+          cosmos-force-network-secured: true
+          cosmos-auto-update: true
+          cosmos-icon: https://lilkidsuave.github.io/cosmos-casaos-store/2FAuth/icon.png
+  
